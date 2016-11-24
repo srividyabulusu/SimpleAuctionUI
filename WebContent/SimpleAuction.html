@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Online Auction Application</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<script src="script.js"></script>	
+</head>
+<body>
+<form id="form" action="auction" onclick="#" method="post">
+	<fieldset>
+		<legend><b><i>Online Auction App</i></b></legend>
+		<table>
+			<tr>
+				<td ><input type="radio" name="option" value="View" required>View table content</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="Modify">Add/Modify records</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="Search">Search database</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="Exit">Exit</td>
+			</tr>
+			<tr>
+				<td  id="submit"><input type="submit" value="submit" onclick="FormValidation();"></td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>

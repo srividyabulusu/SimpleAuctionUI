@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Search Data</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<script src="script.js"></script>
+</head>
+<body>
+<form id="form" autocomplete="on">
+	<fieldset>
+		<legend><b><i>Search Information</i></b></legend>
+		<table>
+			<tr>
+				<td ><input type="radio" name="option" value="product" required>Search listings based on product names</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="seller">Search listings based on seller ID</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="user&ratings">Search for specific user and show comments as well as ratings</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="user&avgratings">Search for specific user and show average rating</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="allBids">Show all bids for a given listing</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="previousMenu">Go Back to previous Menu</td>
+			</tr>
+			<tr>
+				<td  id="submit"><input type="submit" value="submit" onclick="SearchValidation();"></td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+
+</body>
+</html>

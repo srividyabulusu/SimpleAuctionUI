@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+#form{
+	padding: 10px 10px 10px 50px;
+	width: 40%;
+	margin: auto;
+}
+#submit{
+	text-align:center;
+}

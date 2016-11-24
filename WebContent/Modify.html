@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Modify Information</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<script src="script.js"></script>
+</head>
+<body>
+<form id="form" autocomplete="on">
+	<fieldset>
+		<legend><b><i>Modify Information</i></b></legend>
+		<table>
+			<tr>
+				<td ><input type="radio" name="option" value="newCustomer" required>Enter information for new customers (buyers/sellers)</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="addListing">Enter information for listings</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="addBid">Enter information for bids</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="modifyCustomer">Update/delete information on customers</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="modifyListing">Update/delete information on listings</td>
+			</tr>
+			<tr>
+				<td ><input type="radio" name="option" value="Exit">Go back to Previous Menu</td>
+			</tr>
+			<tr>
+				<td  id="submit"><input type="submit" value="submit" onclick="ModifyValidation();"></td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+
+</body>
+</html>
