@@ -14,6 +14,16 @@
             <result name="exit"> /WEB-INF/results/exit.jsp </result>          
         </action>
 
+		 <action name="modify" class="application.Auction" method = "modify">   
+            <result name="newCustomer"> /WEB-INF/results/customerInfo.jsp </result>
+            <result name="newListing"> /WEB-INF/results/listingInfo.jsp </result>
+            <result name="newBid"> /WEB-INF/results/bidInfo.jsp </result>
+            <result name="updateCustomer"> /WEB-INF/results/updateCust.jsp </result>
+            <result name="updateListing"> /WEB-INF/results/updateList.jsp </result>
+            <result name="updateBid"> /WEB-INF/results/updateBid.jsp </result>    
+            <result name="back"> /WEB-INF/SimpleAuction.html </result>          
+        </action>
+		
     </package>
 
     <!-- Add packages here -->

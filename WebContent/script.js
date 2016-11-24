@@ -32,7 +32,7 @@ function SearchValidation(){
 }
 
 function ModifyValidation(){
-	var radios = document.getElementsByName("option");
+	var radios = document.getElementsByName("modify");
     flag = false; 
 
     var i = 0;
