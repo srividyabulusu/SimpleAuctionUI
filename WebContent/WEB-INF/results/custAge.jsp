@@ -4,26 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Bid Information</title>
+<title>Update Customer Age</title>
 <link href="style.css" type="text/css" rel="stylesheet" />
 <script src="script.js"></script>
 </head>
 <body>
-	<form id="form" action="bidInfo" onclick="#" method="post">
+	<form id="form" action="custAge" onclick="#" method="post">
 	 	<fieldset>
 			<legend><b><i>Please enter the following information</i></b></legend>
 		 	<table>
 		 		<tr>
-		 			<td><label>Enter Amount:  </label> </td>
-		 			<td><input type="number" name="bid" id="bid" autofocus required placeholder="10"> </td>
+		 			<td><label>Enter Id of Customer you want to make changes to:  </label> </td>
+		 			<td><input type="number" name="custId" id="custId" autofocus required placeholder="used"> </td>
 		 		</tr>
 		 		<tr>
-		 			<td><label>Enter Listing_id: </label> </td>
-		 			<td><input type="number" name="listId" id="listId" placeholder="111"> </td>
-		 		</tr>
-		 		<tr>
-		 			<td><label>Enter Buyer_id: </label> </td>
-		 			<td><input type="number" name="buyerId" id="buyerId" placeholder="2"> </td>
+		 			<td><label>Enter updated age of Customer: </label> </td>
+		 			<td><input type="number" name="age" id="age" placeholder="e.g: 20"> </td>
 		 		</tr>
 		 		<tr>
 		 			<td id="submit"><input type="submit" value="submit"> </td>

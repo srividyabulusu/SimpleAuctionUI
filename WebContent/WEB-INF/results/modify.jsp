@@ -18,9 +18,8 @@
 			<input type="radio" name="modify" value="newBid">Enter information for bids <br />
 			<input type="radio" name="modify" value="updateCustomer">Update/delete information on customers <br />
 			<input type="radio" name="modify" value="updateListing">Update/delete information on listings <br />
-			<input type="radio" name="modify" value="updateBid">Update/delete information on bids <br />
-			<input type="radio" name="modify" value="back">Go back to previous menu <br />
-			<input type="submit" id="submit" value="submit" onclick="ModifyValidation();">
+			<input type="radio" name="modify" value="back">Go back to previous menu <br /><br />
+			<input type="submit" id="submit" value="submit">
 		</fieldset>
 	 </form>
 	 

@@ -4,9 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Update Customer Information</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="script.js"></script>
 </head>
-<body>
-
+<body>			
+	<form id="form" action="updateCust" onclick="#" method="post">
+	 	<fieldset>
+			<legend><b><i>Please select one of the options below:</i></b></legend>
+			<input type="radio" name="updateCust" value="name" required>Change the customer name <br />
+			<input type="radio" name="updateCust" value="delete">Delete customer <br />
+			<input type="radio" name="updateCust" value="age">Update age <br />
+			<input type="radio" name="updateCust" value="back">Go back to Previous Menu <br />
+			<input type="submit" id="submit" value="submit">
+		</fieldset>
+	 </form>
 </body>
 </html>

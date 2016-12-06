@@ -16,7 +16,7 @@ function FormValidation(){
 }
 
 function SearchValidation(){
-	var radios = document.getElementsByName("option");
+	var radios = document.getElementsByName("search");
     flag = false; 
 
     var i = 0;

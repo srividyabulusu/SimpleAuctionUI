@@ -6,7 +6,9 @@
 <struts>
 
     <package name="default" namespace="/" extends="struts-default">
-        
+        <global-results>
+        	<result name="error"> /WEB-INF/results/error.jsp </result>
+        </global-results>
         <action name="auction" class="application.Auction">   
             <result name="view"> /WEB-INF/results/view.jsp </result>
             <result name="modify"> /WEB-INF/results/modify.jsp </result>
@@ -14,14 +16,84 @@
             <result name="exit"> /WEB-INF/results/exit.jsp </result>          
         </action>
 
-		 <action name="modify" class="application.Auction" method = "modify">   
+		<action name="modify" class="application.Auction" method = "modify">   
             <result name="newCustomer"> /WEB-INF/results/customerInfo.jsp </result>
             <result name="newListing"> /WEB-INF/results/listingInfo.jsp </result>
             <result name="newBid"> /WEB-INF/results/bidInfo.jsp </result>
             <result name="updateCustomer"> /WEB-INF/results/updateCust.jsp </result>
             <result name="updateListing"> /WEB-INF/results/updateList.jsp </result>
             <result name="updateBid"> /WEB-INF/results/updateBid.jsp </result>    
-            <result name="back"> /WEB-INF/SimpleAuction.html </result>          
+            <result name="back"> /SimpleAuction.html </result>          
+        </action>
+        
+        
+        <action name="search" class="application.Auction" method = "search">   
+            <result name="product"> /WEB-INF/results/searchProduct.jsp </result>
+            <result name="seller"> /WEB-INF/results/searchSeller.jsp </result>
+            <result name="userratings"> /WEB-INF/results/searchUsrComments.jsp </result>
+            <result name="useravgratings"> /WEB-INF/results/searchUsrAvgRating.jsp </result>
+            <result name="allBids"> /WEB-INF/results/showBids.jsp </result>   
+            <result name="back"> /SimpleAuction.html </result>          
+        </action>
+        
+        <action name="searchListProd" class="application.SearchActions" method="searchListPName">
+        	<result name="success"> /WEB-INF/results/searchListResult.jsp </result>
+        </action>
+        <action name="searchResult" class="application.Auction" method="goBack">
+        	<result name="back"> /WEB-INF/results/search.jsp </result>
+        </action>
+        <action name="searchListSell" class="application.SearchActions" method="searchListSID">
+        	<result name="success"> /WEB-INF/results/searchListResult.jsp </result>
+        </action>
+        <action name="searchCustCommentRating" class="application.SearchActions" method="searchUserCommentsRatings">
+        	<result name="success"> /WEB-INF/results/searchCustResult.jsp </result>
+        </action>
+        <action name="searchCustAvgRating" class="application.SearchActions" method="searchUserAvgRating">
+        	<result name="success"> /WEB-INF/results/searchCustResult2.jsp </result>
+        </action>
+        <action name="searchBids" class="application.SearchActions" method="showBids">
+        	<result name="success"> /WEB-INF/results/showBidResult.jsp </result>
+        </action>
+        
+        
+        <action name="custInfo" class="application.ModifyActions" method="insertNewCustomer">
+        	<result name="custAdded"> /WEB-INF/results/modify.jsp </result>
+        </action>
+		<action name="listingInfo" class="application.ModifyActions" method="createListing">
+        	<result name="listingAdded"> /WEB-INF/results/modify.jsp </result>
+        </action>
+		<action name="bidInfo" class="application.ModifyActions" method="makeBid">
+        	<result name="bidAdded"> /WEB-INF/results/modify.jsp </result>
+        </action>
+		<action name="updateCust" class="application.Auction" method="custModify">
+        	<result name="name"> /WEB-INF/results/custName.jsp </result>
+        	<result name="delete"> /WEB-INF/results/delCust.jsp </result>
+        	<result name="age"> /WEB-INF/results/custAge.jsp </result>
+        	<result name="back"> /WEB-INF/results/modify.jsp </result>
+        </action>
+		<action name="custName" class="application.ModifyActions" method="alterCustomerName">
+        	<result name="back"> /WEB-INF/results/updateCust.jsp </result>
+        </action>
+        <action name="delCust" class="application.ModifyActions" method="deleteCustomer">
+        	<result name="back"> /WEB-INF/results/updateCust.jsp </result>
+        </action>
+		<action name="custAge" class="application.ModifyActions" method="alterCustomerAge">
+        	<result name="back"> /WEB-INF/results/updateCust.jsp </result>
+        </action>
+        <action name="updateList" class="application.Auction" method="listModify">
+        	<result name="status"> /WEB-INF/results/listStatus.jsp </result>
+        	<result name="delete"> /WEB-INF/results/delList.jsp </result>
+        	<result name="stBid"> /WEB-INF/results/updateListStBid.jsp </result>
+        	<result name="back"> /WEB-INF/results/modify.jsp </result>
+        </action>
+        <action name="listStatus" class="application.ModifyActions" method="alterListingStatus">
+        	<result name="back"> /WEB-INF/results/updateList.jsp </result>
+        </action>
+		<action name="delList" class="application.ModifyActions" method="deleteListing">
+        	<result name="back"> /WEB-INF/results/updateList.jsp </result>
+        </action>
+        <action name="listStBid" class="application.ModifyActions" method="updateListStBid">
+        	<result name="back"> /WEB-INF/results/updateList.jsp </result>
         </action>
 		
     </package>

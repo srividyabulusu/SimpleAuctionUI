@@ -4,26 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Bid Information</title>
+<title>Update List Information</title>
 <link href="style.css" type="text/css" rel="stylesheet" />
 <script src="script.js"></script>
 </head>
 <body>
-	<form id="form" action="bidInfo" onclick="#" method="post">
+	<form id="form" action="listStatus" onclick="#" method="post">
 	 	<fieldset>
 			<legend><b><i>Please enter the following information</i></b></legend>
 		 	<table>
 		 		<tr>
-		 			<td><label>Enter Amount:  </label> </td>
-		 			<td><input type="number" name="bid" id="bid" autofocus required placeholder="10"> </td>
+		 			<td><label>Enter Id of Listing you want to make changes to:  </label> </td>
+		 			<td><input type="number" name="listId" id="listId" autofocus required placeholder="111"> </td>
 		 		</tr>
 		 		<tr>
-		 			<td><label>Enter Listing_id: </label> </td>
-		 			<td><input type="number" name="listId" id="listId" placeholder="111"> </td>
-		 		</tr>
-		 		<tr>
-		 			<td><label>Enter Buyer_id: </label> </td>
-		 			<td><input type="number" name="buyerId" id="buyerId" placeholder="2"> </td>
+		 			<td><label>Enter New Status of Listing: </label> </td>
+		 			<td><input type="text" name="status" id="status" placeholder="e.g: used"> </td>
 		 		</tr>
 		 		<tr>
 		 			<td id="submit"><input type="submit" value="submit"> </td>

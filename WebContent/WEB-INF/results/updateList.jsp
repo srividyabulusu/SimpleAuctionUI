@@ -4,9 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Update Listing Info</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="script.js"></script>
 </head>
 <body>
-
+	<form id="form" action="updateList" onclick="#" method="post">
+	 	<fieldset>
+			<legend><b><i>Please select one of the options below:</i></b></legend>
+			<input type="radio" name="updateList" value="status" required>Change the status of listing <br />
+			<input type="radio" name="updateList" value="delete">Delete a listing <br />
+			<input type="radio" name="updateList" value="stBid">Change the start bid price <br />
+			<input type="radio" name="updateList" value="back">Go back to Previous Menu <br />
+			<input type="submit" id="submit" value="submit">
+		</fieldset>
+	 </form>
 </body>
 </html>
